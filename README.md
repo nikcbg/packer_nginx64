@@ -17,6 +17,7 @@
 - after that you should see this message `nginx64-vbox: 'virtualbox' provider box: nginx64-vbox.box` which means that the VM box was build successfull
 - next you execute `vagrant up` command to power up the VM
 - then execute `vagrant ssh` to log in to the VM
+- you can delete the VM if you do not need it by executing `vagrant destroy`
 
 ### TO DO:
 
