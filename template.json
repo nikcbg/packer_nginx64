@@ -1,7 +1,7 @@
 {
   "variables": {
-    "name": "nikcbg/ubuntu-1604",
-    "build_name": "ubuntu-1604",
+    "name": "nikcbg/nginx64",
+    "build_name": "nginx64,
     "build_cpu_cores": "2",
     "build_memory": "1024",
     "cpu_cores": "1",
