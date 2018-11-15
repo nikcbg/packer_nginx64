@@ -12,8 +12,8 @@
 - Install `packer` by following this [instructions](https://www.packer.io/intro/getting-started/install.html)
 - Clone the repository to your local computer: `git@github.com:nikcbg/packer_nginx64.git`
 - Go to the cloned repo in your computer: `cd packer_nginx64`
-- execute `packer init template.json` - to initiate the template for the machine 
-- execute `packer build template.json` - to start building the machine 
+- execute `packer validate template.json` - validates `template.json` file, after executing the command it shoudl return `Template validated successfully` message 
+- execute `packer build template.json` - to start building the virtual machine 
 
 ### TO DO:
-* 
+
