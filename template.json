@@ -1,6 +1,6 @@
 {
   "variables": {
-    "name": "cbednarski/ubuntu-1604",
+    "name": "nikcbg/ubuntu-1604",
     "build_name": "ubuntu-1604",
     "build_cpu_cores": "2",
     "build_memory": "1024",
