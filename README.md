@@ -14,6 +14,9 @@
 - Go to the cloned repo in your computer: `cd packer_nginx64`
 - execute `packer validate template.json` - validates `template.json` file, after executing the command it shoudl return `Template validated successfully` message 
 - execute `packer build template.json` - to start building the virtual machine 
+- after that you should see this message `nginx64-vbox: 'virtualbox' provider box: nginx64-vbox.box` which means that the VM box was build successfull
+- next you execute `vagrant up` command to power up the VM
+- then execute `vagrant ssh` to log in to the VM
 
 ### TO DO:
 
