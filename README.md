@@ -8,6 +8,11 @@
 - `http/preseed.cfg` - script that installs Ubuntu.
 - `scripts/provision.sh` - script that installs `nginx`.
 - `template.json` - template with code for `packer` to create the image we want.
+- `test/integration/default/check_pkg.rb` - script that isntalls various packages for `ruby` development environmnet.
+- `test/integration/default/gen.sh` - script that installs `wget` package
+- `.gitignore` - which files and directories to ignore
+- `.kitchen.yml` - testing framework used by `ruby`
+- `Gemfile` - used for `ruby` dependencies
 
 ### How to use this repository.
 - Install `virtualbox` by following this [instructions](https://www.virtualbox.org/wiki/Downloads)
@@ -18,7 +23,9 @@
 - execute `packer validate template.json` - validates `template.json` file, after executing the command it shoudl return `Template validated successfully` message. 
 - execute `packer build template.json` - to start building the virtual machine. 
 - after that you should see this message `nginx64-vbox: 'virtualbox' provider box: nginx64-vbox.box` which means that the VM box was build successfull.
-- then execute `vagrant init`to create `vagrantfile` 
+- execute `vagrant box list` – shows list of `vagrant` boxes
+- execute `vagrant box add --name nginx64 nginx64-vbox.box`  - add the newly created `packer` box 
+- execute `vagrant init nginx64` – create Vagrantfile 
 - next you execute `vagrant up` command to power up the VM.
 - then execute `vagrant ssh` to log in to the VM.
 - you can delete the VM if you do not need it by executing `vagrant destroy`.
