@@ -10,6 +10,8 @@
 - `template.json` - template with code for `packer` to create the image we want.
 
 ### How to use this repository.
+- Install `virtualbox` by following this [instructions](https://www.virtualbox.org/wiki/Downloads)
+- Install `vagrant` by following this [instructions](https://www.vagrantup.com/docs/installation/)
 - Install `packer` by following this [instructions](https://www.packer.io/intro/getting-started/install.html).
 - Clone the repository to your local computer: `git@github.com:nikcbg/packer_nginx64.git`.
 - Go to the cloned repo in your computer: `cd packer_nginx64`.
