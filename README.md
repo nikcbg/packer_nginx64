@@ -28,6 +28,9 @@
 - execute `vagrant init nginx64` – create Vagrantfile 
 - next you execute `vagrant up` command to power up the VM.
 - then execute `vagrant ssh` to log in to the VM.
+- execute `exit` to exit the VM to test with `kitchen`
+- 
+- 
 - you can delete the VM if you do not need it by executing `vagrant destroy`.
 
 ### TO DO:
