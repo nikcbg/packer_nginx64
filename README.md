@@ -21,4 +21,4 @@
 - you can delete the VM if you do not need it by executing `vagrant destroy`.
 
 ### TO DO:
-- Check if `nginx` is running.
+- Check if `nginx` is installed on the xenial64 box.
