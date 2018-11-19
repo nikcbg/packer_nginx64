@@ -29,9 +29,21 @@
 - next you execute `vagrant up` command to power up the VM.
 - then execute `vagrant ssh` to log in to the VM.
 - execute `exit` to exit the VM to test with `kitchen`
+
+### Setting up `ruby` environment
+- before testing with `kitchen` you need to install and prepare `ruby` environment 
+- execute `brew install rbenv` - installs `ruby` environment
+- execute `echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile` - accessing `ruby` management tool
+- execute `source ~/.bash_profile` to reload `bash` profile 
+- execute `rbenv init` to enable `rbenv` in `shell`
+- execute `rbenv install 2.3.1` to install `ruby` 
+- execute `rbenv local 2.3.1` to change to the `ruby` version
+- execute `rbenv versions` to make you have the correct version
+- execute `gem install bundler` to install `gem`whuch is package manager for `ruby` 
+- execute `bundle install` to install all `gem` dependencies
 - 
 - 
-- you can delete the VM if you do not need it by executing `vagrant destroy`.
+- 
 
 ### TO DO:
 - Check if `nginx` is installed on the xenial64 box.
