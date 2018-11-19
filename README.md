@@ -67,9 +67,8 @@ rbenv ()
 ```
 Successfully installed bundler-1.17.1
 1 gem installed
-nikolay@HP ~ $ 
+ 
 ```
-- Execute `bundle install` to install all `gem` dependencies
 
 ### Commands needed to test with `kitchen`
 - Execute `bundle exec kitchen list` to list `kitchen` instances 
