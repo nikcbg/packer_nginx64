@@ -41,7 +41,6 @@
 - Execute `source ~/.bash_profile` to reload `bash` profile.
 - Execute `type rbenv` command to verify that `rbenv` is set up properly, the output will display the following:
 ```
-Output
 rbenv is a function
 rbenv ()
 {
@@ -61,11 +60,15 @@ rbenv ()
 }
 ```
 
-- Execute `rbenv init` to enable `rbenv` in `shell`
-- Execute `rbenv install 2.3.1` to install `ruby` 
-- Execute `rbenv local 2.3.1` to change to the `ruby` version
-- Execute `rbenv versions` to make sure you have the correct version
-- Execute `gem install bundler` to install `gem`whuch is package manager for `ruby` 
+- Execute `rbenv install 2.5.3` to install `ruby 2.5.3` version.
+- Execute `rbenv global 2.5.3` to set the default version of `ruby`.
+- Execute `rbenv -v` to make sure `ruby` is installed and you have the correct version.
+- Execute `gem install bundler` to install `gem`whuch is package manager for `ruby`, the output will display the following:
+```
+Successfully installed bundler-1.17.1
+1 gem installed
+nikolay@HP ~ $ 
+```
 - Execute `bundle install` to install all `gem` dependencies
 
 ### Commands needed to test with `kitchen`
