@@ -10,11 +10,7 @@ platforms:
     driver:
       box: xenial64
       provider: virtualbox
-  - name: vmware/xenial64
-    driver:
-      box: xenial64
-      provider: vmware_desktop
-
+ 
 verifier:
   name: inspec
 
