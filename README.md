@@ -8,8 +8,8 @@
 - `http/preseed.cfg` - script that installs Ubuntu.
 - `scripts/provision.sh` - script that installs `nginx`.
 - `template.json` - template with code for `packer` to create the image we want.
-- `test/integration/default/check_pkg.rb` - script that isntalls various packages for `ruby` development environmnet.
-- `test/integration/default/gen.sh` - script that installs `wget` package
+- `test/integration/default/check_pkg.rb` - script need by `kitchen` to check if `nginx` is installed. 
+- `test/integration/default/gen.sh` - script need by `kitchen` to check if `nginx` is installed. 
 - `.gitignore` - which files and directories to ignore
 - `.kitchen.yml` - testing framework used by `ruby`
 - `Gemfile` - used for `ruby` dependencies
@@ -20,9 +20,9 @@
 - Install `packer` by following this [instructions](https://www.packer.io/intro/getting-started/install.html).
 - Clone the repository to your local computer: `git clone git@github.com:nikcbg/packer_nginx64.git`.
 - Go to the cloned repo on your computer: `cd packer_nginx64`.
-- execute `packer validate template.json` - validates `template.json` file, after executing the command it shoudl return `Template validated successfully` message. 
-- execute `packer build template.json` - to start building the virtual machine you need to run your tests on. 
-- after that you should see this message `nginx64-vbox: 'virtualbox' provider box: nginx64-vbox.box` which means that the VM box was created successfully.
+- Execute `packer validate template.json` to validates `template.json` file, after executing the command it shoudl return `Template validated successfully` message. 
+- Execute `packer build template.json`  to start building the virtual machine you need to run your tests on. 
+- After that you should see this message `nginx64-vbox: 'virtualbox' provider box: nginx64-vbox.box` which means that the VM box was created successfully.
 - Execute `vagrant box list` to see the list of `vagrant` boxes.
 - Execute `vagrant box add --name nginx64 nginx64-vbox.box`  to add the newly created `packer` box. 
 - Execute `vagrant init nginx64` to create Vagrantfile if one doesn't already exist.  
@@ -67,14 +67,14 @@ rbenv ()
 ```
 Successfully installed bundler-1.17.1
 1 gem installed
- 
 ```
 
-### Commands needed to test with `kitchen`
-- Execute `bundle exec kitchen list` to list `kitchen` instances 
-- Execute `bundle exec kitchen converge` to create `kitchen` environment 
-- Execute `bundle exec kitchen verify` command to execute `kitchen` test
-- Execute `bundle exec kitchen destroy` to destroy `kitchen` environment 
+### Commands needed to test with `kitchen`.
+- Execute `bundle exec kitchen list` to list `kitchen` instances.
+- Execute `bundle exec kitchen converge` to create `kitchen` environment.
+- Execute `bundle exec kitchen verify` command to execute `kitchen` test.
+- Execute `bundle exec kitchen destroy` to destroy `kitchen` environment.
+- Execute `bundle exec kitchen test` to automatically build, test and destroy `kitchen` environment.
 
 ### TO DO:
 - Check if `nginx` is installed on the xenial64 box.
