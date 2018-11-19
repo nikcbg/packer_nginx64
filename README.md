@@ -38,7 +38,7 @@
 - execute `rbenv init` to enable `rbenv` in `shell`
 - execute `rbenv install 2.3.1` to install `ruby` 
 - execute `rbenv local 2.3.1` to change to the `ruby` version
-- execute `rbenv versions` to make you have the correct version
+- execute `rbenv versions` to make sure you have the correct version
 - execute `gem install bundler` to install `gem`whuch is package manager for `ruby` 
 - execute `bundle install` to install all `gem` dependencies
 
