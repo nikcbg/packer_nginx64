@@ -1,7 +1,7 @@
 # packer_nginx64
 
 ### Purpose of the repository 
-- The repository should have the minimal code for creating Ubuntu xenial64 box with Packer and should also install nginx.
+- The repository should have the minimal code for creating Ubuntu xenial64 box with `Packer` and should also install `nginx`.
 
 #### List of files in the repository
 
