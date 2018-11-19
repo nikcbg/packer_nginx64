@@ -26,8 +26,9 @@
 - execute `vagrant box list` – shows list of `vagrant` boxes
 - execute `vagrant box add --name nginx64 nginx64-vbox.box`  - add the newly created `packer` box 
 - execute `vagrant init nginx64` – create Vagrantfile 
-- next you execute `vagrant up` command to power up the VM.
-- then execute `vagrant ssh` to log in to the VM.
+- execute `vagrant up` command to power up the VM.
+- execute `vagrant ssh` to log in to the VM.
+- execute `service nginx status` to see if `nginx` web server is installed and runing. 
 - execute `exit` to exit the VM to test with `kitchen`
 
 ### Setting up `ruby` environment
