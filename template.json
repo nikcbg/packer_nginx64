@@ -121,7 +121,7 @@
     {
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -H -E -S bash '{{.Path}}'",
       "expect_disconnect": true,
-      "script": "../scripts/packages.sh",
+      "script": "../scripts/provision.sh",
       "type": "shell"
     },
     {
