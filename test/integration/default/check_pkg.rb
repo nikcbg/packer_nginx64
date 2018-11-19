@@ -6,11 +6,11 @@ describe package('curl') do
   it { should be_installed }
 end
 
-describe package('ruby') do
+describe package('nginx') do
   it { should be_installed }
 end
 
-describe package('nginx') do
+describe package('ruby') do
   it { should be_installed }
 end
 
