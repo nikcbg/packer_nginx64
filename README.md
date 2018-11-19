@@ -31,13 +31,13 @@
 - Execute `service nginx status` to see if `nginx` web server is installed and runing. 
 - Execute `exit` to exit the VM to test with `kitchen`.
 
-### Setting up `ruby` environment on Uuntu 18.04 instructions:
+### Setting up `ruby` environment on Ubuntu 18.04 instructions:
 - Before testing with `kitchen` you need to install and prepare `ruby` environment.
-- Execute `sudo apt update` to update the packegs on your Ubuntu computer. 
+- Execute `sudo apt update` to update the packages on your Ubuntu computer. 
 - Execute `sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm5 libgdbm-dev` to install `ruby` dependencies.
 - Execute `wget -q https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer -O- | bash` to download and install `rbenv` environment
 - Execute `echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile` to change your `~/.bashrc` file to use `ruby` command line utility 
-- Exdcute `echo 'eval "$(rbenv init -)"' >> ~/.bashrc` so `rbenv` loads automatically.
+- Execute `echo 'eval "$(rbenv init -)"' >> ~/.bashrc` so `rbenv` loads automatically.
 - Execute `source ~/.bash_profile` to reload `bash` profile.
 - Execute `type rbenv` command to verify that `rbenv` is set up properly, the output will display the following:
 ```
