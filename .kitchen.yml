@@ -8,7 +8,7 @@ provisioner:
 platforms:
   - name: vbox/nginx64
     driver:
-      box: xenial64
+      box: nginx64
       provider: virtualbox
  
 verifier:
